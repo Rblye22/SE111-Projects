@@ -1,0 +1,50 @@
+
+header{
+    background-color: darkgray;
+    background-image: linear-gradient(darkgray,white);
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+body{
+    border: 1px solid black;
+    width: screen;
+    height: 1000px;
+    border-radius: 10px;
+    background-color: darkgray;
+    box-shadow: 10px 10px 10px rgba(10, 10, 10, 0.5);
+}
+
+h1{
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+}
+#logo{
+    width: 300px;
+    background-color: darkgray;
+    height: 190px;
+    left: 50%;
+    transform: translateX(230%);
+}
+
+a:link{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    padding-right: 25px;
+}
+a:hover{
+    text-decoration: underline;
+}
+#footer{
+    text-align: center;
+    color: black;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
