@@ -1,48 +1,93 @@
 
-body {
-    background-color: #454B1B;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center; 
-}
-
 #content {
-    text-align: center;
-    color: black;
+    color: #454B1B;
 }
 
-.content-p{
+.content-p{    
+    justify-content: center; 
+    align-items: center;
+    width: 800px;
+    margin: 0 auto; 
+    color: #CBBD93;
+    padding: 20px; 
+    box-sizing: border-box; 
+    height: auto;
+}
+
+.content-c{
+    color: #454B1B;
+    text-align: center;
+}
+
+.content-s{
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    width: 700px;
+    margin: 0 auto; 
+    color: #CBBD93;
+    padding: 20px; 
+    box-sizing: border-box; 
+    height: auto;
+}
+
+.content-h{
+    text-align: center;
     color: #CBBD93;
 }
 
-header {
+.info{
+    color: #454B1B
+}
+
+.info-p{
+    color: #CBBD93;
+    text-decoration: none;
+    text-align: justify;
+
+}
+
+#main{
     text-align: center;
     margin: 20px 0;
+    color: #454B1B;
 }
 
-#nav {
-    word-spacing: 40px;
+body {
+    background-color: #1a1a1a;
+    font-family: "Stencil Std", sans-serif;
+    margin: 0;
+    padding: 0;
     text-align: center;
-    text-decoration: solid;
-    font-weight: bold;
-    color: #CBBD93;
-    background-color: black;
-    margin: auto;
-    padding: 10px;
 }
 
-#nav a:hover {
-    text-decoration: underline;
+nav{
+    color: black;
+}
+.nav-btn {
+    background-image: url("../images/chocolate_desert.webp");
+    padding: 20px;
+}
+
+.nav-btn:hover {
+    color: black;
+    text-decoration: underline; 
+}
+
+a:link, a:visited {
+    color: #454B1B;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 img {
     display: block;
-    margin: 20px auto; 
+    margin: auto; 
 }
 
-#footer {
-    width: 100vw;
-    height: 10vh;
-    object-fit: cover; 
+.image-c {
+    margin-left: 10px; 
+    display: block; 
 }
 
 .youtube {
@@ -50,16 +95,28 @@ img {
     padding: 20px;
 }
 
-a:link, a:visited {
-    color: #CBBD93;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-a:hover {
-    text-decoration: underline;
-}
 
 .character{
     color: #CBBD93;
+    text-align: justify;
+}
+
+#footer {
+    width: 100%; 
+    background-image: url("../images/chocolate_desert.webp");
+    color: #454B1B; 
+    padding: 20px; 
+    text-align: center; 
+}
+
+#footer img {
+    object-fit: cover; 
+    max-width: 100%; 
+    height: auto; 
+}
+
+#footer a {
+    color: black;
+    display: block; 
+    margin-top: 10px; 
 }
