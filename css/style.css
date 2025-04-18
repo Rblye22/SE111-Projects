@@ -24,11 +24,9 @@ h1{
     padding-bottom: 10px;
 }
 #logo{
-    width: 300px;
     background-color: darkgray;
     height: 190px;
-    left: 50%;
-    transform: translateX(230%);
+    text-align: center;
 }
 
 a:link{
