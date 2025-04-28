@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <!--Tells the -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Your Name Here">
+    <meta name="author" content="Robert">
     <meta name="description" content="Default HTML Page for SE 111">
     
     <link type="text/css" rel="stylesheet" href="style.css">
@@ -15,5 +15,129 @@
 <body>
     <!--Build your Table and Form here-->
     
+<h1>Birthday Party Registration Form</h1>
+
+<form action="confirm.html" method="GET">
+  <table border="1">
+    <thead>
+      <tr>
+        <th>Labels</th>
+        <th>Form Fields</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>Parent/Guardian Name</td>
+        <td>
+          <input type="text" name="parent_first_name" placeholder="First Name" required>
+          <br>
+          <input type="text" name="parent_last_name" placeholder="Last Name" required>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Child's First Name</td>
+        <td>
+          <input type="text" name="child_first_name" placeholder="Child's First Name" required>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Child's Age</td>
+        <td>
+          <input type="number" name="child_age" min="1" required>
+        </td>
+      </tr>
+
+      <tr>
+        <td><h2>Date and Time</h2</td>
+            <td></td>
+      </tr>
+
+      <tr>
+        <td>Date</td>
+        <td>
+          <input type="date" name="party_date" required>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Start Time</td>
+        <td>
+          <input type="time" name="start_time" required>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Number of Guests</td>
+        <td>
+          <input type="number" name="guests" min="1" required>
+        </td>
+      </tr>
+
+      <tr>
+        <td><h2>Food</h2></td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Size</td>
+        <td>
+          <input type="radio" name="size" value="small" required> sm
+          <input type="radio" name="size" value="medium"> med
+          <input type="radio" name="size" value="large"> lg
+        </td>
+      </tr>
+
+      <tr>
+        <td>Drinks</td>
+        <td>
+          <input type="checkbox" name="drink" value="Coke"> Coke<br>
+          <input type="checkbox" name="drink" value="Sprite"> Sprite<br>
+          <input type="checkbox" name="drink" value="Fruit Punch"> Fruit Punch<br>
+          <input type="checkbox" name="drink" value="Lemonade"> Lemonade<br>
+          <input type="checkbox" name="drink" value="Iced Tea"> Iced Tea
+        </td>
+      </tr>
+
+      <tr>
+        <td>Cake</td>
+        <td>
+          <select name="cake" required>
+            <option value="Chocolate">Chocolate</option>
+            <option value="Vanilla">Vanilla</option>
+            <option value="Strawberry">Strawberry</option>
+          </select>
+        </td>
+      </tr>
+
+      <tr>
+        <td><h2>Decorations</h2></td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <td>Color Scheme</td>
+        <td>
+          <input type="color" name="color_scheme" required>
+        </td>
+      </tr>
+
+      <tr>
+        <td>Additional Comments</td>
+        <td>
+          <textarea name="comments" placeholder="Please add any additional comments" rows="4" cols="30"></textarea>
+        </td>
+      </tr>
+
+      <tr>
+        <td colspan="2" style="text-align: center;">
+          <input type="submit" value="Submit">
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</form>
 </body>
 </html>
