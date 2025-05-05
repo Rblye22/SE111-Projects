@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pay Calculator</title>
+</head>
+<body>
+    <script>
+        // Gather users input
+        hourlyPay = Number(prompt("Enter your hourly pay:\n", "14.50"))
+        hoursPerWeek = Number(prompt("Enter hours worked per week:\n", "32"))
+        taxRate = Number(prompt("Enter your tax rate as a decimal (e.g. 0.20 for 20%):\n", "0.20"))
+
+        // Calculate gross pay for two weeks
+        grossPay = hourlyPay * hoursPerWeek * 2
+
+        // Calculate tax amount
+        taxAmount = grossPay * taxRate
+
+        // Calculate net pay
+        netPay = grossPay - taxAmount
+
+        // Format to two decimal places
+        grossPay = grossPay.toFixed(2)
+        taxAmount = taxAmount.toFixed(2)
+        netPay = netPay.toFixed(2)
+
+        // Output using alert 
+        message = `Gross Pay: $${grossPay}\nUncle Sam's Share: $${taxAmount}\nNet Pay: $${netPay}`
+        alert(message)
+
+        // Output using console log
+        console.log(`Gross Pay: $${grossPay}`)
+        console.log(`Uncle Sam's Share: $${taxAmount}`)
+        console.log(`Net Pay: $${netPay}`)
+    </script>
+</body>
+</html>
