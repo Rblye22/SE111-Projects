@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Week 2 Files</title>
+	<style>
+		.border{border:1px solid black;}
+	</style>
+</head>
+	<body>
+		<script>
+			//Use this Array of objects to complete the assignment.
+			var people =[
+				{first:"Jason", last:"Vorhees", credit:"Friday the 13th"},
+				{first:"Freddy", last:"Krueger", credit:"A Nightmare on Elm Street" },
+				{first:"Roger", last:"Rabbit", credit:"Who Framed Roger Rabbit" },
+				{first:"Kevin", last:"McCallister", credit:"Home Alone" },
+				{first:"Godzilla", last:"King of The Monsters", credit:"Godzilla" },
+				{first:"Buzz", last:"Lightyear", credit:"Toy Story" },
+				{first:"Marion", last:"Cobretti", credit:"Cobra" }
+			];
+
+			for (var i = 0; i <people.length; i++){
+				var person = people[i];
+				// create div
+				var div = document.createElement("div");
+
+				// Add class
+				div.className = "border";
+
+				// Set attribute
+				div.setAttribute("id", "person" +i)
+				
+				// Create and append first name, last name, and credit
+				var p1 = document.createElement("p");
+				p1.textContent = "First Name: " + person.first;
+				div.appendChild(p1);
+
+				var p2 = document.createElement("p");
+				p2.textContent = "Last Name: " + person.last;
+				div.appendChild(p2);
+
+				var p3 = document.createElement("p");
+				p3.textContent = "Credit: " + person.credit;
+				div.appendChild(p3);
+
+				// Append the div to the body
+				document.body.appendChild(div);
+			}
+			
+		</script>
+	</body>
+</html>
